@@ -24,7 +24,7 @@ const List = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center">List</h2>
+      <h1 className="text-center">List</h1>
       <p className="text-center">
         We list the countries of South America, thier flags, and information
         about each country.
@@ -37,7 +37,7 @@ const List = () => {
           {countries.map((country) => (
             <div key={country.cca3} className="card p-2 card-container">
               <div className="mb-3">
-                <h3>{country.name.common}</h3>
+                <h2>{country.name.common}</h2>
                 <img
                   src={country.flags.png}
                   width={200}

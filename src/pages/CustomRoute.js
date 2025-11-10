@@ -74,7 +74,7 @@ const CustomRoute = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center">Drivers</h2>
+      <h1 className="text-center">Drivers</h1>
       <p className="text-center">
         Shows the percentage of left and right drivers in South America
       </p>

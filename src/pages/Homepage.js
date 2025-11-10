@@ -27,7 +27,7 @@ const Homepage = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center">Welcome, this is the homepage</h2>
+      <h1 className="text-center">Welcome, this is the homepage</h1>
       <div>
         <p className="text-center">
           This website uses information about South America, and the data that

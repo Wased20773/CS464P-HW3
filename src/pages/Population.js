@@ -95,7 +95,7 @@ const Population = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center">Population</h2>
+      <h1 className="text-center">Population</h1>
       <p className="text-center">
         Below is a bar chart showing the population of each country in South
         America

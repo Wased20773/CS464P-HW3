@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Routes, Route, Navigation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage.js";
 import List from "./pages/List.js";
 import Population from "./pages/Population.js";
 import CustomRoute from "./pages/CustomRoute.js";
 import NavBar from "./components/NavBar.js";
-import axios from "axios";
 
 import "./style.css";
 

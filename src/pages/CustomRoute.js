@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "../components/Loading.js";
 import {
@@ -10,6 +10,7 @@ import {
   CategoryScale,
 } from "chart.js";
 import { Pie } from "react-chartjs-2";
+import "../styles/PieChart.css";
 
 ChartJS.register(ArcElement, Title, Tooltip, Legend, CategoryScale);
 
@@ -78,7 +79,13 @@ const CustomRoute = () => {
       <p className="text-center">
         Shows the percentage of left and right drivers in South America
       </p>
-      {loading ? <Loading /> : <Pie data={pieChart} options={options} />}
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="pie-chart">
+          <Pie data={pieChart} options={options} />
+        </div>
+      )}
       <div>
         {/* Display data raw */}
         {/* {countries.map((country) => (
